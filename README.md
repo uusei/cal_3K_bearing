@@ -14,6 +14,13 @@
 planet-wheel pin bearings of an NGW-type 3K planetary reducer, following the
 **ISO 281** standard.
 
+仓库还包含 `3k_bearing_calculator.xlsx`，用于按题述推导直接在 Excel 中录入参数、
+自动重算双联行星轮轴承载荷、寿命与静安全系数。
+
+The repository also includes `3k_bearing_calculator.xlsx`, an Excel calculator
+for the paired-planet bearing derivation so users can update inputs and
+recalculate load, life, and static safety directly in a worksheet.
+
 ---
 
 ## 计算原理 Theory
@@ -38,6 +45,13 @@ python cal_3K_bearing.py
 
 内置示例参数将自动执行并打印完整报告。  
 The built-in example runs automatically and prints a full report.
+
+### Excel 模板 Excel workbook
+
+- 打开 `3k_bearing_calculator.xlsx`
+- 修改蓝色输入单元格
+- 工作表会自动重算
+- 表中同时给出矢量合成载荷和保守同向叠加载荷，寿命计算默认采用矢量合成值
 
 ---
 
